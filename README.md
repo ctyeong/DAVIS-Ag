@@ -4,11 +4,11 @@
 
 This repository is for the official release of the DAVIS-Ag dataset, introduced in: 
 
-*"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
+> *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
 
 For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful annotations from  632 realistically synthesized plant environments. In particular, to simulate an embodied agent that can move, viewpoints for images were selected from densely distributed locations while each image is also linked with others that are *reachable* by an execution of actions. 
 
-Moreover, pixel-wise "instance" segmentations and bounding boxes of fruits are available for studies on fruit detection/coverage. Global poses of cameras are provided for development of vision-based navigation or localization. 
+Moreover, pixel-wise "instance" segmentations and bounding boxes of fruits are available for studies on fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. 
 
 More details follow below. 
 
@@ -16,8 +16,16 @@ More details follow below.
 
 The link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
 
-
 <!-- # Generation Framework  -->
+
+# Data Structure/Format
+
+DAVIS-Ag is structured as follows: 
+```
+(Plant_Type)-(Scenario) - (Scene_#) - annotations.json
+                                    L (Images) - Image_#.jpeg 
+                                               L Image_#_seg.png
+```
 
 # Scenes  
 
@@ -25,7 +33,8 @@ Three types of plants are simulated: Strawberry, Tomato, and Goblet Vine, and fo
 
 - *Single-plant*: One single plant is positioned at the central location of the scene; Camera views from any positions are designed to always aim at the plant; Three different heights of view are simulated; Six actions are considered: *Forward, Backward, Left, Right, Up*, and *Down*.
 
-- *Multi-plant*: Three plants in a row are present in each tomato or vine case while five in a row in a strawberry scene; Two different heights of view are simulated; Eight actions are executable: *Forward, Backward, Left, Right, Up, Down, Rotate Clockwise,* and *Rotate Counterclockwise*.
+- *Multi-plant*: Three plants in a row are present in each tomato or vine case while five in a row in a strawberry scene; Two levels of height of view are simulated; Eight actions are executable: *Forward, Backward, Left, Right, Up, Down, Rotate Clockwise,* and *Rotate Counterclockwise*.
+
 
 
 
