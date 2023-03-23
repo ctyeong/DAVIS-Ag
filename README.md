@@ -25,23 +25,32 @@ Once you have downloaded DAVIS-Ag, you can find its structure as below:
 "Scenario-Plant_Type"
  └── "Scene_#" 
             ├── "annotations.json"  
-            └── "Images" 
+            └── "images" 
                       ├── "Image_#.jpeg"
                       └── "Image_#_seg.png"
 ```
 
-For example, under `Single-Strawberry`, you could see: 
-<!-- 
+For example, under `Single-Tomato`, you could see: 
+
 ```
-Single-Strawberry – 000 – annotations.json
-                        L Images) – Image_#.jpeg 
-                                               L Image_#_seg.png
-``` -->
+Single-Tomato
+ ├── 000 
+ ├── 001 
+ ├── 002 
+       ├── annotations.json 
+       └── images 
+                ├── 0001.jpeg
+                ├── 0001_seg.png
+                ├── 0002.jpeg
+                ├── 0002_seg.png
+                ...
+ └── 136  
+```
 
-
+<!-- 
 RGB, 
 json
-pixel-wise seg
+pixel-wise seg -->
 
 
 
