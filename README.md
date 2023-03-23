@@ -61,7 +61,7 @@ Three types of plants are simulated: `Strawberry`, `Tomato`, and `Goblet Vine`, 
 
 - *Multi-plant (MP)*: Three plants in a row are present in each tomato or vine scene while five in a row in a strawberry scene; Two levels of height of view are simulated; Eight actions are executable: *Forward, Backward, Left, Right, Up, Down, Rotate_Clockwise,* and *Rotate_Counterclockwise*.
 
-Brief stats for both scenarios are shown in the tables below.
+In total, 502,542 RGB images and associated labels are available. More specific stats for both scenarios are shown in the tables below.
 
 | SP  | Total | Strawberry  |  Tomato | Goblet Vine | 
 |:-:|---|---|---|:-:|
@@ -73,6 +73,8 @@ Brief stats for both scenarios are shown in the tables below.
 | # of Scenes  | 234 | 77  | 113  | 44  |
 | # of RGB Images  | 369,456  | 86,856  | 203,400  | 79,200  | 
 
+
+<!-- spatial distribution / variations in position / variations in phenotypes  -->
 
 # Labels & File Format
 
@@ -128,6 +130,19 @@ Forth entry (`instance_id`) in a bounding box can be used to track a particular 
 
 Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. If the action leads to a position out of the grid or too close to a plant, "" is given. 
 
+
+# Generation Pipeline 
+
+Two major software components have been fully utilized to produce DAVIS-Ag: 
+
+1. <a href="https://baileylab.ucdavis.edu/software/helios/" target="_blank">Helios</a>
+2.  <a href="https://github.com/Project-AgML/AgML" target="_blank">AgML</a>
+
+which are both actively developed by research groups based in the University of California, Davis. 
+
+More specifically, several plugins in Helios were used to synthesize realistic visual data of plant with useful annotations whereas AgML worked as an interface for Python scripts to freely access those plugins for particular purposes for generation of DAVIS-Ag. 
+
+For those who are interested in more technical details, reading the [paper](#davis-ag-dataset) on the top is strongly recommended.
 
 
 # Supplementary Video
