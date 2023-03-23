@@ -10,7 +10,8 @@ For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K
 
 # Download Link
 
-Link to a cloud will be offered very soon.
+Link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
+
 
 <!-- # Generation Framework  -->
 
