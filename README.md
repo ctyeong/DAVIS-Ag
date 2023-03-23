@@ -2,15 +2,13 @@
 
 (This page is under update)
 
-This repository is for the official release of the DAVIS-Ag dataset, introduced in: 
+This repository is for the official release of the "DAVIS-Ag" dataset, introduced in: 
 
 > *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
 
-For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful annotations from  632 realistically synthesized plant environments. In particular, to simulate an embodied agent that can move, viewpoints for images were selected from densely distributed locations while each image is also linked with others that are *reachable* by an execution of actions. 
+For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful labels from  632 realistically synthesized plant environments. In particular, to simulate an embodied agent that can move without any complicated pipeline (e.g., gaming engines, ROS, etc.), viewpoints for images were sampled from densely distributed locations while each viewpoint is also linked with others if *reachable* by an execution of action. 
 
-Moreover, pixel-wise "instance" segmentations and bounding boxes of fruits are available for studies on fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. 
-
-More details follow below. 
+Pixel-wise segmentations and bounding boxes of fruits are available with unique "instance" ID's for studies on instance-level fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. More details are described below. 
 
 # Download
 
