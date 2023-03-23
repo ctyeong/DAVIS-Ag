@@ -6,7 +6,7 @@ This repository is for the official release of the "DAVIS-Ag" dataset, introduce
 
 > *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
 
-For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful labels from  632 realistically synthesized plant environments. In particular, to simulate an embodied agent that can move without any complicated pipeline (e.g., gaming engines, ROS, etc.), viewpoints for images were sampled from densely distributed locations while each viewpoint is also linked with others if *reachable* by an execution of action. 
+For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful labels from  632 realistically synthesized plant environments. In particular, you can simulate an embodied agent that can move without any complicated components (e.g., gaming engines, ROS, etc.) because viewpoints for imaging were sampled from densely distributed locations while each viewpoint is also linked with others if *reachable* by an execution of action. 
 
 Pixel-wise segmentations and bounding boxes of fruits are available with unique "instance" ID's for studies on instance-level fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. More details are described below. 
 
@@ -22,10 +22,10 @@ Once you have downloaded DAVIS-Ag, you could find its structure of directory as 
 ```
 "Scenario-Plant_Type"
  └── "Scene_#" 
-            ├── "annotations.json"  
-            └── "images" 
-                      ├── "Image_#.jpeg"
-                      └── "Image_#_seg.png"
+     ├── "annotations.json"  
+     └── "images" 
+           ├── "Image_#.jpeg"
+           └── "Image_#_seg.png"
 ```
 
 For example, under `Single-Tomato`, you could see: 
@@ -35,31 +35,43 @@ Single-Tomato
  ├── 000 
  ├── 001 
  ├── 002 
-       ├── annotations.json 
-       └── images 
-                ├── 0001.jpeg
-                ├── 0001_seg.png
-                ├── 0002.jpeg
-                ├── 0002_seg.png
-                ...
-                ├── 0347.jpeg
-                └── 0347_seg.png 
+     ├── annotations.json 
+     └── images 
+          ├── 0001.jpeg
+          ├── 0001_seg.png
+          ├── 0002.jpeg
+          ├── 0002_seg.png
+           ...
+          ├── 0347.jpeg
+          └── 0347_seg.png 
  ...
  ├── 135 
  └── 136  
 ```
 
 Each `*.jpeg` is a RGB image of 1280x720 taken from a particular viewpoint, and `*_seg.png` is a image file of the same size that shows the corresponding pixel-wise segmentation of fruits. 
-`annotations.json` contains all other labels, described [Labels](#labels) section below.
+`annotations.json` contains all other useful labels, explained [Labels](#labels) section below.
 
 
 # Scene Environments  
 
-Three types of plants are simulated: Strawberry, Tomato, and Goblet Vine, and for each type, two different scenarios are considered depending on the size of the scene in simulation. 
+Three types of plants are simulated: `Strawberry`, `Tomato`, and `Goblet Vine`, and for each type, two different scenarios are considered depending on the size of the scene. 
 
-- *Single-plant*: One single plant is positioned at the central location of the scene; Camera views from any positions are designed to always aim at the plant; Three different heights of view are simulated; Six actions are considered: *Forward, Backward, Left, Right, Up*, and *Down*.
+- *Single-plant (SP)*: One single plant is positioned at the central location of the scene; Camera views from any positions are designed to always aim at the plant; Three different altitudes of view are simulated; Six actions are considered: *Forward, Backward, Left, Right, Up*, and *Down*.
 
-- *Multi-plant*: Three plants in a row are present in each tomato or vine case while five in a row in a strawberry scene; Two levels of height of view are simulated; Eight actions are executable: *Forward, Backward, Left, Right, Up, Down, Rotate Clockwise,* and *Rotate Counterclockwise*.
+- *Multi-plant (MP)*: Three plants in a row are present in each tomato or vine scene while five in a row in a strawberry scene; Two levels of height of view are simulated; Eight actions are executable: *Forward, Backward, Left, Right, Up, Down, Rotate_Clockwise,* and *Rotate_Counterclockwise*.
+
+Brief stats for both scenarios are shown in the tables below.
+
+| SP  | Total | Strawberry  |  Tomato | Goblet Vine | 
+|:-:|---|---|---|:-:|
+| # of Scenes  | 398 | 86  | 130  | 182  |
+| # of RGB Images  | 133,086  | 24,510  | 45,240  | 63,336  | 
+
+| MP  | Total | Strawberry  |  Tomato | Goblet Vine | 
+|:-:|---|---|---|:-:|
+| # of Scenes  | 234 | 77  | 113  | 44  |
+| # of RGB Images  | 369,456  | 86,856  | 203,400  | 79,200  | 
 
 
 # Labels & File Format
