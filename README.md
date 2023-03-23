@@ -6,22 +6,22 @@ This repository is for the official release of the DAVIS-Ag dataset, introduced 
 
 *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
 
-For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful annotations from  632 realistically synthesized plant environments. More details follow. 
+For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful annotations from  632 realistically synthesized plant environments. In particular, to simulate an embodied agent that can move, viewpoints for images were selected from densely distributed locations while each image is also linked with others that are *reachable* by an execution of actions. 
 
-# Download Link
+Moreover, pixel-wise "instance" segmentations and bounding boxes of fruits are available for studies on fruit detection/coverage. Global poses of cameras are provided for development of vision-based navigation or localization. 
 
-Link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
+More details follow below. 
+
+# Download
+
+The link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
 
 
 <!-- # Generation Framework  -->
 
 # Scenes  
 
-Three types of plants are simulated: Strawberry, Tomato, and Goblet Vine. 
-
-
-
-In addition, two different scenarios are considered depending on the size of the scene in simulation. 
+Three types of plants are simulated: Strawberry, Tomato, and Goblet Vine, and for each type, two different scenarios are considered depending on the size of the scene in simulation. 
 
 - *Single-plant*: One single plant is positioned at the central location of the scene; Camera views from any positions are designed to always aim at the plant; Three different heights of view are simulated; Six actions are considered: *Forward, Backward, Left, Right, Up*, and *Down*.
 
