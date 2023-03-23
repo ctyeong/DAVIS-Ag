@@ -18,14 +18,32 @@ The link to download the full dataset will be offered very soon. In the meantime
 
 <!-- # Generation Framework  -->
 
-# Data Structure/Format
+# Directory Structure/ File Format
 
-DAVIS-Ag is structured as follows: 
+Once you have downloaded DAVIS-Ag, you can find its structure as below: 
 ```
-(Plant_Type)-(Scenario) - (Scene_#) - annotations.json
-                                    L (Images) - Image_#.jpeg 
+"Scenario-Plant_Type"
+ └── "Scene_#" 
+            ├── "annotations.json"  
+            └── "Images" 
+                      ├── "Image_#.jpeg"
+                      └── "Image_#_seg.png"
+```
+
+For example, under `Single-Strawberry`, you could see: 
+<!-- 
+```
+Single-Strawberry – 000 – annotations.json
+                        L Images) – Image_#.jpeg 
                                                L Image_#_seg.png
-```
+``` -->
+
+
+RGB, 
+json
+pixel-wise seg
+
+
 
 # Scenes  
 
