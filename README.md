@@ -1,7 +1,5 @@
 # "DAVIS-Ag" Dataset
 
-(This page is under update)
-
 This repository is for the official release of the "DAVIS-Ag" dataset, introduced in: 
 
 > *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
@@ -10,11 +8,26 @@ For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K
 
 Pixel-wise segmentations and bounding boxes of fruits are available with unique "instance" ID's for studies on instance-level fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. More details are described below. 
 
+### Table of Contents: 
+- ["DAVIS-Ag" Dataset](#davis-ag-dataset)
+    - [Table of Contents:](#table-of-contents)
+- [Download](#download)
+- [Directory Structure](#directory-structure)
+- [Scene Configurations](#scene-configurations)
+    - [Spatial Sampling Method](#spatial-sampling-method)
+    - [Random Variations in Phenotypes](#random-variations-in-phenotypes)
+- [Labels \& File Format](#labels--file-format)
+    - [Annotations.json](#annotationsjson)
+- [Generation Pipeline](#generation-pipeline)
+- [Use-case Example](#use-case-example)
+- [Supplementary Video](#supplementary-video)
+- [Contact](#contact)
+
+
 # Download
 
 The link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
 
-<!-- # Generation Framework  -->
 
 # Directory Structure
 
@@ -74,7 +87,7 @@ In total, 502,542 RGB images and associated labels are available. More specific 
 | # of RGB Images  | 369,456  | 86,856  | 203,400  | 79,200  | 
 
 
-### Dense Spatial Sampling 
+### Spatial Sampling Method
 
 For simulation of mobile agent, a number of viewpoints are sampled from a dense spatial distribution in each scene. For example, as seen below, each `Single-Strawberry` scenario features 285 viewpoints (i.e., colorful circles) pre-selected around a plant (i.e., "x" at the center) across a three dimensional space, where the grid is 3m wide and 3m long, and three levels of altitudes–i.e., 0.50m, 0.75m, and 1.00m–are simulated. Those viewpoints were determined by a simulated step size of 25cm.
 
@@ -143,13 +156,13 @@ Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_webs
 
 Forth entry (`instance_id`) in a bounding box can be used to track a particular instance of fruit. Also, `pose` represents the pose of camera that was used to take the image in the global coordinate system. 
 
-Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. You can use a line of code to simulate the mobility of agent as follows: 
+Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. You can simply use *a line of code* to simulate the mobility of agent as follows: 
 
 ```
 next_image_name = annotation_json[image_name][action]
 ```
 
-By taking a chain of actions, exploration of an embodied agent can be realized as below:
+By taking a chain of actions in a loop, exploration of an embodied agent can be realized as below:
 ![motion_sim](figures/motion_sim2.gif)
 
 If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
