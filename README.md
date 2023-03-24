@@ -150,7 +150,7 @@ next_image_name = annotation_json[image_name][action]
 ```
 
 By taking a chain of actions, exploration of an embodied agent can be realized as below:
-![motion_sim](figures/motion_sim.gif)
+![motion_sim](figures/motion_sim2.gif)
 
 If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
 
