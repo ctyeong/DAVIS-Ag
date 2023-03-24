@@ -81,11 +81,14 @@ For simulation of mobile agent, a number of viewpoints are sampled from a dense 
 ![spatial_dist](figures/spatial_distribution.png)
 
 Moreover, each position is perturbed by an additive white Gaussian noise $\epsilon \sim N(0, 2.5cm)$ to consider a possible "slip" of robot in the outdoor environment.
-For more information on the cases with MP scenarios and other types of plant, read Section III [in the cited paper above](#davis-ag-dataset).
+For more information on the cases with MP scenarios or other types of plant, read Section III [in the cited paper above](#davis-ag-dataset).
 
 ## Random Variations in Phenotypes
 
-<!-- spatial distribution / variations in position / variations in phenotypes  -->
+Each scene was produced with randomized parameters to show distinct phenotypic characteristics from others. 
+To be specific, initial parameters for the sizes of fruit, leaf, and trunk were each randomly sampled from $U(0.8\alpha, 1.2\alpha)$, where $\alpha$ represents the default setting in <a href="https://baileylab.ucdavis.edu/software/helios/" target="_blank">Helios</a>. Several examples with various appearances are displayed below. 
+
+![size_variations](figures/size_variations.png)
 
 # Labels & File Format
 
