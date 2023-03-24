@@ -53,7 +53,7 @@ Each `*.jpeg` is a RGB image with the resolution of 1280x720 which was taken fro
 `annotations.json` contains all other useful labels, explained [Labels](#labels) section below.
 
 
-# Scene Environments  
+# Scene Configurations   
 
 Three types of plant are simulated: `Strawberry`, `Tomato`, and `Goblet Vine`, and for each type, two different scenarios are considered depending on the size of the scene. 
 
@@ -74,7 +74,7 @@ In total, 502,542 RGB images and associated labels are available. More specific 
 | # of RGB Images  | 369,456  | 86,856  | 203,400  | 79,200  | 
 
 
-## Dense Spatial Sampling 
+### Dense Spatial Sampling 
 
 For simulation of mobile agent, a number of viewpoints are sampled from a dense spatial distribution in each scene. For example, as seen below, each `Single-Strawberry` scenario features 285 viewpoints (i.e., colorful circles) pre-selected around a plant (i.e., "x" at the center) across a three dimensional space, where the grid is 3m wide and 3m long, and three levels of altitudes–i.e., 0.50m, 0.75m, and 1.00m–are simulated. Those viewpoints were determined by a simulated step size of 25cm.
 
@@ -83,7 +83,7 @@ For simulation of mobile agent, a number of viewpoints are sampled from a dense 
 Moreover, each position is perturbed by an additive white Gaussian noise $\epsilon \sim N(0, 2.5cm)$ to consider a possible "slip" of robot in the outdoor environment.
 For more information on the cases with MP scenarios or other types of plant, read Section III [in the cited paper above](#davis-ag-dataset).
 
-## Random Variations in Phenotypes
+### Random Variations in Phenotypes
 
 Each scene was produced with randomized parameters to show distinct phenotypic characteristics from others. 
 To be specific, initial parameters for the sizes of fruit, leaf, and trunk were each randomly sampled from $U(0.8\alpha, 1.2\alpha)$, where $\alpha$ represents the default setting in <a href="https://baileylab.ucdavis.edu/software/helios/" target="_blank">Helios</a>. Several examples with various appearances are displayed below. 
