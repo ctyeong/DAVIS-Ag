@@ -154,18 +154,18 @@ Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_webs
 }
 ```
 
-Forth entry (`instance_id`) in a bounding box can be used to track a particular instance of fruit. Also, `pose` represents the pose of camera that was used to take the image in the global coordinate system. 
+Forth entry (`instance_id`) in a bounding box can be used to track a particular instance of fruit, which matches that in segmentation. Also, `pose` represents the pose of camera that was used to take the image in the global coordinate system. 
 
-Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. You can simply use *a line of code* to simulate the mobility of agent as follows: 
+Furthermore, each possible action is *linked* with another image file to simulate the action of embodied agent. You can simply use *a line of code* to simulate the mobility of agent as follows: 
 
 ```
 next_image_name = annotation_json[image_name][action]
 ```
 
-By taking a chain of actions in a loop, exploration of an embodied agent can be realized as below:
+By taking a chain of actions in a loop, a simulated agent can explore the scene as below:
 ![motion_sim](figures/motion_sim2.gif)
 
-If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
+If the chosen action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
 
 
 # Generation Pipeline 
