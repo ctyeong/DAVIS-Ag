@@ -8,9 +8,9 @@ For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K
 
 Pixel-wise segmentations and bounding boxes of fruits are available with unique "instance" ID's for studies on instance-level fruit detection/coverage. Global poses of cameras are also provided for development of vision-based navigation/localization. More details are described below. 
 
-### Table of Contents: 
+## Table of Contents: 
 - ["DAVIS-Ag" Dataset](#davis-ag-dataset)
-    - [Table of Contents:](#table-of-contents)
+  - [Table of Contents:](#table-of-contents)
 - [Download](#download)
 - [Directory Structure](#directory-structure)
 - [Scene Configurations](#scene-configurations)
