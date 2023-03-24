@@ -86,7 +86,7 @@ For more information on the cases with MP scenarios or other types of plant, rea
 ### Random Variations in Phenotypes
 
 Each scene was produced with randomized parameters to show distinct phenotypic characteristics from others. 
-To be specific, initial parameters for the sizes of fruit, leaf, and trunk were each randomly sampled from $U(0.8\alpha, 1.2\alpha)$, where $\alpha$ represents the default setting in <a href="https://baileylab.ucdavis.edu/software/helios/" target="_blank">Helios</a>. Several examples with various appearances are displayed below. 
+To be specific, initial parameters for the sizes of fruit, leaf, and trunk were each randomly sampled from $U(0.8\alpha, 1.2\alpha)$, where $\alpha$ represents the default setting in <a href="https://baileylab.ucdavis.edu/software/helios/" target="_blank">Helios</a>. Several examples with unique appearances in Single-Strawberry scenes are displayed below. 
 
 ![size_variations](figures/size_variations.png)
 
@@ -144,7 +144,7 @@ In addition, inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision
 
 Forth entry (`instance_id`) in a bounding box can be used to track a particular instance of fruit. Also, `pose` represents the pose of camera that was used to take the image in the global coordinate system. 
 
-Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. If the action leads to a position out of the grid or too close to a plant, "" is given. 
+Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
 
 
 # Generation Pipeline 
