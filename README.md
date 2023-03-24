@@ -102,7 +102,7 @@ Each RGB image (`*.jpeg`) is provided with the following labels:
 
 4. Action pointers
 
-where 2–4 are all provided in `annotations.json`. 
+where 2–4 are all provided in `annotations.json`. In particular, DAVIS-Ag offers 1 and 2 with unique "instance" ID's of fruits in the scene. For instance, each pixel in `*_seg.png` can represent a unique instance ID of fruit in the scene. Pixels that are not of any fruit are set to 255. 
 
  | RGB of Goblet Vine | Segmentation of Goblet Vine |
 |:-:|:-:|
@@ -112,11 +112,9 @@ where 2–4 are all provided in `annotations.json`.
 |:-:|:-:|
 |![rgb_vine](figures/single_strawberry_bb.png)| ![seg_vine](figures/single_tomato_bb.png)|
 
-In particular, DAVIS-Ag offers 1 and 2 with unique "instance" ID's of fruits in the scene. For instance, each pixel in `*_seg.png` can represent a unique instance ID of fruit in the scene. Pixels that are not of any fruit are set to 255. 
-
 ### Annotations.json
 
-In addition, inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html" target="_blank">Active Vision Dataset</a>, `annotations.json` is designed to show bounding boxes and other labels:
+Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html" target="_blank">Active Vision Dataset</a>, `annotations.json` is designed to show bounding boxes and other labels:
 
 ```
 {
