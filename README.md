@@ -76,12 +76,11 @@ In total, 502,542 RGB images and associated labels are available. More specific 
 
 ## Dense Spatial Sampling 
 
-For simulation of mobile agent, a number of viewpoints are sampled from a dense spatial distribution in each scene. For example, as seen below, for each `Single-Strawberry` scenario, 285 viewpoints are selected across a three dimensional space, where the grid is 3m wide and 3m long, and three levels of altitudes–i.e., 0.50m, 0.75m, and 1.00m–are simulated. Those viewpoints were determined by a simulated step size of 25cm.
+For simulation of mobile agent, a number of viewpoints are sampled from a dense spatial distribution in each scene. For example, as seen below, each `Single-Strawberry` scenario features 285 viewpoints (i.e., colorful circles) pre-selected around a plant (i.e., "x" at the center) across a three dimensional space, where the grid is 3m wide and 3m long, and three levels of altitudes–i.e., 0.50m, 0.75m, and 1.00m–are simulated. Those viewpoints were determined by a simulated step size of 25cm.
 
 ![spatial_dist](figures/spatial_distribution.png)
 
 Moreover, each position is perturbed by an additive white Gaussian noise $\epsilon \sim N(0, 2.5cm)$ to consider a possible "slip" of robot in the outdoor environment.
- 
 For more information on the cases with MP scenarios and other types of plant, read Section III [in the cited paper above](#davis-ag-dataset).
 
 ## Random Variations in Phenotypes
