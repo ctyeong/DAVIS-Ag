@@ -114,7 +114,7 @@ where 2–4 are all provided in `annotations.json`. In particular, DAVIS-Ag offe
 
 ### Annotations.json
 
-Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html" target="_blank">Active Vision Dataset</a>, `annotations.json` is designed to show bounding boxes and other labels:
+Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html" target="_blank">Active Vision Dataset</a>, `annotations.json` is designed to present the information of bounding boxes and other labels:
 
 ```
 {
@@ -125,6 +125,7 @@ Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_webs
           ...,
       ],
       "pose": [x, y, z, yaw, pitch],
+      // action pointers below
       "forward":"another_image_name",
       "backward":"another_image_name",
       "left":"another_image_name",
@@ -142,7 +143,16 @@ Inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_webs
 
 Forth entry (`instance_id`) in a bounding box can be used to track a particular instance of fruit. Also, `pose` represents the pose of camera that was used to take the image in the global coordinate system. 
 
-Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
+Furthermore, each possible action is linked with another image file to simulate the action of embodied agent. You can use a line of code to simulate the mobility of agent as follows: 
+
+```
+next_image_name = annotation_json[image_name][action]
+```
+
+By taking a chain of actions, exploration of an embodied agent can be realized as below:
+![motion_sim](figures/motion_sim.gif)
+
+If the action leads to a position out of the grid or too close to a plant, "" is given. For more details of such constraints, refer to Section III-C of [the cited paper above](#davis-ag-dataset).  
 
 
 # Generation Pipeline 
@@ -154,7 +164,7 @@ Two major software components have been fully utilized to produce DAVIS-Ag:
 
 which are both actively developed by research groups based in the University of California, Davis. 
 
-More specifically, several plugins in Helios were used to synthesize realistic visual data of plant with useful annotations whereas AgML worked as an interface for Python scripts to freely access those plugins for particular purposes for generation of DAVIS-Ag. 
+More specifically, several plugins in Helios were used to synthesize realistic visual data of plant with annotations whereas AgML worked as an interface for Python scripts to freely access those plugins for particular purposes of DAVIS-Ag. 
 
 For those who are interested in more technical details, reading Section III-A of [the cited paper above](#davis-ag-dataset) is strongly recommended.
 
