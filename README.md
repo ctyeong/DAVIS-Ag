@@ -63,7 +63,7 @@ Single-Tomato
 ```
 
 Each `*.jpeg` is a RGB image with the resolution of 1280x720 which was taken from a particular viewpoint. Similarly, `*_seg.png` is a image file of the same size that shows the corresponding pixel-wise segmentation of fruits. 
-`annotations.json` contains all other useful labels, explained [Labels](#labels) section below.
+`annotations.json` contains all other useful labels, explained [Labels & File Format](#labels--file-format) section below.
 
 
 # Scene Configurations   
