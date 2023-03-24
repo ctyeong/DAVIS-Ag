@@ -49,13 +49,13 @@ Single-Tomato
  └── 136  
 ```
 
-Each `*.jpeg` is a RGB image of 1280x720 taken from a particular viewpoint, and `*_seg.png` is a image file of the same size that shows the corresponding pixel-wise segmentation of fruits. 
+Each `*.jpeg` is a RGB image with the resolution of 1280x720 which was taken from a particular viewpoint. Similarly, `*_seg.png` is a image file of the same size that shows the corresponding pixel-wise segmentation of fruits. 
 `annotations.json` contains all other useful labels, explained [Labels](#labels) section below.
 
 
 # Scene Environments  
 
-Three types of plants are simulated: `Strawberry`, `Tomato`, and `Goblet Vine`, and for each type, two different scenarios are considered depending on the size of the scene. 
+Three types of plant are simulated: `Strawberry`, `Tomato`, and `Goblet Vine`, and for each type, two different scenarios are considered depending on the size of the scene. 
 
 - *Single-plant (SP)*: One single plant is positioned at the central location of the scene; Camera views from any positions are designed to always aim at the plant; Three different altitudes of view are simulated; Six actions are considered: *Forward, Backward, Left, Right, Up*, and *Down*.
 
@@ -74,6 +74,18 @@ In total, 502,542 RGB images and associated labels are available. More specific 
 | # of RGB Images  | 369,456  | 86,856  | 203,400  | 79,200  | 
 
 
+## Dense Spatial Sampling 
+
+For simulation of mobile agent, a number of viewpoints are sampled from a dense spatial distribution in each scene. For example, as seen below, for each `Single-Strawberry` scenario, 285 viewpoints are selected across a three dimensional space, where the grid is 3m wide and 3m long, and three levels of altitudes–i.e., 0.50m, 0.75m, and 1.00m–are simulated. Those viewpoints were determined by a simulated step size of 25cm.
+
+![spatial_dist](figures/spatial_distribution.png)
+
+Moreover, each position is perturbed by an additive white Gaussian noise $\epsilon \sim N(0, 2.5cm)$ to consider a possible "slip" of robot in the outdoor environment.
+ 
+For more information on the cases with MP scenarios and other types of plant, read Section III [in the cited paper above](#davis-ag-dataset).
+
+## Random Variations in Phenotypes
+
 <!-- spatial distribution / variations in position / variations in phenotypes  -->
 
 # Labels & File Format
@@ -90,7 +102,7 @@ Each RGB image (`*.jpeg`) is provided with the following labels:
 
 where 2–4 are all provided in `annotations.json`. 
 
- | RGB of Goblet Vine | Seg of Goblet Vine |
+ | RGB of Goblet Vine | Segmentation of Goblet Vine |
 |:-:|:-:|
 |![rgb_vine](figures/single_vine_rgb.png)| ![seg_vine](figures/single_vine_seg.png)|
 
@@ -98,7 +110,7 @@ where 2–4 are all provided in `annotations.json`.
 |:-:|:-:|
 |![rgb_vine](figures/single_strawberry_bb.png)| ![seg_vine](figures/single_tomato_bb.png)|
 
-In particular, DAVIS-Ag offers 1 and 2 with unique instance ID's of fruits in the scene. For instance, each pixel in `*_seg.png` can represent a unique instance ID of fruit in the scene. Pixels that are not of any fruit are set to 255. 
+In particular, DAVIS-Ag offers 1 and 2 with unique "instance" ID's of fruits in the scene. For instance, each pixel in `*_seg.png` can represent a unique instance ID of fruit in the scene. Pixels that are not of any fruit are set to 255. 
 
 In addition, inspired by <a href="https://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html" target="_blank">Active Vision Dataset</a>, `annotations.json` is designed to show bounding boxes and other labels:
 
@@ -142,12 +154,18 @@ which are both actively developed by research groups based in the University of 
 
 More specifically, several plugins in Helios were used to synthesize realistic visual data of plant with useful annotations whereas AgML worked as an interface for Python scripts to freely access those plugins for particular purposes for generation of DAVIS-Ag. 
 
-For those who are interested in more technical details, reading the [paper](#davis-ag-dataset) on the top is strongly recommended.
+For those who are interested in more technical details, reading Section III-A of [the cited paper above](#davis-ag-dataset) is strongly recommended.
+
+
+# Use-case Example 
+
+To be updated very soon.
 
 
 # Supplementary Video
 
 https://youtu.be/CIXA1qgl6JM 
+
 
 # Contact
 
