@@ -26,7 +26,7 @@ Pixel-wise segmentations and bounding boxes of fruits are available with unique 
 
 # Download
 
-- Single-Strawberry: [[PART1]](https://drive.google.com/file/d/16F10E4fybkzuII2NeRtkyogfJtVV4zoC/view?usp=share_link) |  [[PART2]](https://drive.google.com/file/d/1nyH1-gJZbCWlYG8Pijt0UMayQOGSIw0V/view?usp=share_link) | [[Splits]](https://drive.google.com/file/d/1-9ZENdmVi6CuhjP9gOXw-KZ1hV5PAKVC/view?usp=share_link)
+- Single-Strawberry: [[PART1 (7GB)]](https://drive.google.com/file/d/16F10E4fybkzuII2NeRtkyogfJtVV4zoC/view?usp=share_link) |  [[PART2 (7GB)]](https://drive.google.com/file/d/1nyH1-gJZbCWlYG8Pijt0UMayQOGSIw0V/view?usp=share_link) | [[Splits]](https://drive.google.com/file/d/1-9ZENdmVi6CuhjP9gOXw-KZ1hV5PAKVC/view?usp=share_link)
 - Single-Tomato: Coming very soon!
 - Single-Vine: Coming very soon!
 - Multi-Strawberry: Coming very soon!
