@@ -26,7 +26,12 @@ Pixel-wise segmentations and bounding boxes of fruits are available with unique 
 
 # Download
 
-The link to download the full dataset will be offered very soon. In the meantime, feel free to explore <a href="https://ucdavis365-my.sharepoint.com/:f:/g/personal/taechoi_ucdavis_edu/Eoc5VOEXhqhHsP3jU9PzqS4BQQZ9hIs5zJmRuVhJwLTEsw?e=lMNmP0" target="_blank">example data</a>.
+- Single-Strawberry: [[PART1]](https://drive.google.com/file/d/16F10E4fybkzuII2NeRtkyogfJtVV4zoC/view?usp=share_link) |  [[PART2]](https://drive.google.com/file/d/1nyH1-gJZbCWlYG8Pijt0UMayQOGSIw0V/view?usp=share_link) | [[Splits]](https://drive.google.com/file/d/1-9ZENdmVi6CuhjP9gOXw-KZ1hV5PAKVC/view?usp=share_link)
+- Single-Tomato: Coming very soon!
+- Single-Vine: Coming very soon!
+- Multi-Strawberry: Coming very soon!
+- Multi-Tomato: Coming very soon!
+- Multi-Vine: Coming very soon!
 
 
 # Directory Structure
