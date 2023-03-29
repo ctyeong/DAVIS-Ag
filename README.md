@@ -27,7 +27,7 @@ Pixel-wise segmentations and bounding boxes of fruits are available with unique 
 # Download
 
 - Single-Strawberry: [[PART 1 (7GB)]](https://drive.google.com/file/d/16F10E4fybkzuII2NeRtkyogfJtVV4zoC/view?usp=share_link) |  [[PART 2 (7GB)]](https://drive.google.com/file/d/1nyH1-gJZbCWlYG8Pijt0UMayQOGSIw0V/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1-9ZENdmVi6CuhjP9gOXw-KZ1hV5PAKVC/view?usp=share_link)
-- Single-Tomato: Coming very soon!
+- Single-Tomato: [[PART 1 (7.5GB)]](https://drive.google.com/file/d/11kEc2HqFny6HgEYiuofVFZu_h0pwGrnc/view?usp=share_link) | [[PART 2 (7.5GB)]](https://drive.google.com/file/d/1bkikpu1VDKqAcbscPczkRcCk7l3WiXF6/view?usp=sharing) | [[PART 3 (7.5GB)]](https://drive.google.com/file/d/1kaSlx2qe1D_IvvJFRZEMrbmeIM1kO7Qs/view?usp=share_link) | [[PART 4 (7GB)]](https://drive.google.com/file/d/1OISnBTkkBKa3SBjaXPDWkSvJCjJB5AbO/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/12wevLwJfNKWSccpL8XeS3jGO8kBkJUx1/view?usp=share_link)
 - Single-Vine: Coming very soon!
 - Multi-Strawberry: [[PART 1 (9GB)]](https://drive.google.com/file/d/1W2tVW6OFiLlpW2n6ZHI9B0v2bIsOhdCo/view?usp=share_link) | [[PART 2 (9GB)]](https://drive.google.com/file/d/14V7bDVb2OiB5U0gnWgoBwYNrBLOa4dP0/view?usp=share_link) | [[PART 3 (9GB)]](https://drive.google.com/file/d/1-GPfAJyeWnoHUmW-vINj6aZiEz9ba32z/view?usp=share_link) | [[PART 4 (9GB)]](https://drive.google.com/file/d/1-GHiKtN38hQpCBv927MibUxTdrRPt3I9/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1-8PTUEmgLPy0qpKDu9jD-uUpPFUDNXlk/view?usp=share_link)
 - Multi-Tomato: Coming very soon!
