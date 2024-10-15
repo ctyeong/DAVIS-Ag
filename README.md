@@ -2,7 +2,7 @@
 
 This repository is for the official release of the "DAVIS-Ag" dataset, introduced in: 
 
-> *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Grisha Bandodkar, Zifei Cheng, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
+> *"DAVIS-Ag: A Synthetic Plant Dataset for Developing Domain-Inspired Active Vision in Agricultural Robots"*. Taeyeong Choi, Dario Guevara, Zifei Cheng, Grisha Bandodkar, Chonghan Wang, Brian N. Bailey, Mason Earles, and Xin Liu. Proceedings of the 2024 IEEE International Conference on Automation Science and Engineering (CASE 2024). [\[arXiv:2303.05764\]](https://arxiv.org/pdf/2303.05764.pdf). 
 
 For research in active vision in Agricultural scenarios, DAVIS-Ag presents >502K RGB images with useful labels from  632 realistically synthesized plant environments. In particular, you can simulate an embodied agent that can move without any complicated components (e.g., gaming engines, ROS, etc.) because viewpoints for imaging were sampled from densely distributed locations while each viewpoint is also linked with others if *reachable* by an execution of action. 
 
@@ -27,13 +27,6 @@ Pixel-wise segmentations and bounding boxes of fruits are available with unique 
 # Download
 
 - [[DOWNLOAD LINK]](https://kennesawedu-my.sharepoint.com/:f:/g/personal/tchoi3_kennesaw_edu/Emp5f32cVWRHu_A9Ap62wfABvcIC6af-mApAEFLk7SEdiQ?e=CGi5t2)
-
-<!-- - Single-Strawberry: [[PART 1 (7GB)]](https://drive.google.com/file/d/16F10E4fybkzuII2NeRtkyogfJtVV4zoC/view?usp=share_link) |  [[PART 2 (7GB)]](https://drive.google.com/file/d/1nyH1-gJZbCWlYG8Pijt0UMayQOGSIw0V/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1-9ZENdmVi6CuhjP9gOXw-KZ1hV5PAKVC/view?usp=share_link)
-- Single-Tomato: [[PART 1 (7.5GB)]](https://drive.google.com/file/d/11kEc2HqFny6HgEYiuofVFZu_h0pwGrnc/view?usp=share_link) | [[PART 2 (7.5GB)]](https://drive.google.com/file/d/1bkikpu1VDKqAcbscPczkRcCk7l3WiXF6/view?usp=sharing) | [[PART 3 (7.5GB)]](https://drive.google.com/file/d/1kaSlx2qe1D_IvvJFRZEMrbmeIM1kO7Qs/view?usp=share_link) | [[PART 4 (7GB)]](https://drive.google.com/file/d/1OISnBTkkBKa3SBjaXPDWkSvJCjJB5AbO/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/12wevLwJfNKWSccpL8XeS3jGO8kBkJUx1/view?usp=share_link)
-- Single-Vine: [[PART 1 (10GB)]](https://drive.google.com/file/d/17qloaiC9BX9gwrIFiz6PVlvqdIpd7efc/view?usp=share_link) | [[PART 2 (10GB)]](https://drive.google.com/file/d/1qTuyZjQCd4LZFzX7rCaTpkNk3H_jhoVA/view?usp=share_link) | [[PART 3 (10GB)]](https://drive.google.com/file/d/1Kpf8kgypyM96RqjV1-37LxwfZE7kgLpJ/view?usp=share_link) | [[PART 4 (10GB)]](https://drive.google.com/file/d/1CTS-zI7at8vem2Cl56_8js2IqZNu_2Cg/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1u08i9ULa3GwvD4fQPK9HSnnSGidhSVtt/view?usp=share_link)
-- Multi-Strawberry: [[PART 1 (9GB)]](https://drive.google.com/file/d/1W2tVW6OFiLlpW2n6ZHI9B0v2bIsOhdCo/view?usp=share_link) | [[PART 2 (9GB)]](https://drive.google.com/file/d/14V7bDVb2OiB5U0gnWgoBwYNrBLOa4dP0/view?usp=share_link) | [[PART 3 (9GB)]](https://drive.google.com/file/d/1-GPfAJyeWnoHUmW-vINj6aZiEz9ba32z/view?usp=share_link) | [[PART 4 (9GB)]](https://drive.google.com/file/d/1-GHiKtN38hQpCBv927MibUxTdrRPt3I9/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1-8PTUEmgLPy0qpKDu9jD-uUpPFUDNXlk/view?usp=share_link)
-- Multi-Tomato: [[PART 1 (15GB)]](https://drive.google.com/file/d/1lbBXKZXR3itzjfdv87hDRfkKZWHf1f0T/view?usp=share_link) | [[PART 2 (15GB)]](https://drive.google.com/file/d/1kFlWyYJ0ykEj_CY3IBXTPq3ssidJvX-k/view?usp=share_link) | [[PART 3 (15GB)]](https://drive.google.com/file/d/1cGjBkTm8P-aAAo3rv1L_bsGgsNawqkSN/view?usp=share_link) | [[PART 4 (15GB)]](https://drive.google.com/file/d/1-FojrgqqXjYFA1rvjrJ-aRe2Fap9bvAO/view?usp=share_link) | [[PART 5 (15GB)]](https://drive.google.com/file/d/1-I9Co585RKVNJv2tqHSNtxfeHPer0vdw/view?usp=share_link) | [[PART 6 (15GB)]](https://drive.google.com/file/d/1-CjbROWL45rOJaTHz-nSncc4cmp8swrr/view?usp=sharing) | [[PART 7 (16GB)]](https://drive.google.com/file/d/1Y0Tjq8VxHUsQWqcBPCNAQwS1b6P8FD1W/view?usp=sharing) | [[PART 8 (7GB)]](https://drive.google.com/file/d/1gcjBGarHuluA4ojI9ZaFRdFWr3gD1pH2/view?usp=sharing) | [[SPLITS]](https://drive.google.com/file/d/1KPut5ppcIrLSfqoZLJyYm8Pjs3y_UNbC/view?usp=sharing)
-- Multi-Vine: [[PART 1 (10GB)]](https://drive.google.com/file/d/1Eu3hd8jJmZaRrIeb_KJyicaBjBfK75wZ/view?usp=share_link) | [[PART  2 (10GB)]](https://drive.google.com/file/d/1--0gH-V2sW6nENfVbyG-JbptB3LgDATE/view?usp=share_link) | [[PART 3 (10GB)]](https://drive.google.com/file/d/1-27brjuEIXXbFRycDZLiyRnSQRSADLvm/view?usp=share_link) | [[PART 4 (10GB)]](https://drive.google.com/file/d/1-3pbGO91D0z19tbPmjmpFrRSI23mu9ii/view?usp=share_link) | [[SPLITS]](https://drive.google.com/file/d/1-41QO30b0HrJIsumZ5rHxEirly80FHWI/view?usp=share_link) -->
 
 # Directory Structure
 
@@ -200,4 +193,4 @@ https://youtu.be/CIXA1qgl6JM
 
 # Contact
 
-If you have any questions, please feel free to send an email to: taechoi@ucdavis.edu.
+If you have any questions, please feel free to send an email to: tchoi3@kennesaw.edu.
